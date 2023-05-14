@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+/*variable*/
+:root{
+    --main-color: #ff6d46;
+    --second-color: #ecfdf8;
+    --text-color: #121011;
+    --bg-color: #fff;
+
+    /*Box Shadow*/
+    --box-shadow: 0 0 16px 1px rgb(14 52 54 /15%);
+}
+
+
+.panda-bg-info{
+    background-color: #fceae8;
+}
+.categories img{
+    width: 100px;
+}
+.p {
+    background-image: linear-gradient(to bottom, #ff4a92 0%, #FF136F 100%);
+    color: white;
+    top: 20px;
+    border-radius: 12px;
+    padding: 9px 25px;
+    border: none;
+
+}
+/* icon*/
+.header-icon{
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    column-gap: 0.8rem;
+    align-items: center;
+}
+.header-icon .bx{
+    color:  #e8eeff;
+    padding: 7px;
+    background:#ff8664;
+    border-radius: 0.4rem;
+}
+.header-icon .bx:hover{
+    background-color: #E76F51;
+}
+.header-icon i{
+    position: relative;
+}
+/* search */
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: -100%;
+
+    background: #e8eeff; 
+    box-shadow: #e8eeff;  
+    
+}
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+    color: #E76F51;
+
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.search-box.active{
+    right: 1rem;
+    transition: 0.2s all linear;
+}
+
+/* Home */
+.text span{
+    color: #E76F51;
+   
+}
+/* Home button */
+.panda-btn-buy-now{
+    padding: 10px 20px;
+    border-radius: 0.1rem;
+    background-color: #ff8664;
+    font-weight: 500;
+    
+}
+/* about us & button */
+.btn{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+}
+.btn:hover{
+    background: #ff8664;
+}
+.about{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(17rem,auto));
+    gap: 1.5rem;
+    background-color: #fceae8;
+}
+.about-text h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 00.5rem 0 1.1rem;
+}
+/* products */
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.ex-1{
+    color: #E76F51;
+}
+/* rating */
+.checked {
+    color: orange;
+  }
+  /* faq */
+  .accordion-item,.accordion-header{
+
+    background-color: transparent ! important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+  .accordion-item{
+      box-shadow: 0 2px 20px 0 rgba(110, 130, 208, .18);
+  }
+  .accordion-button{
+      width: 100%;
+      height: 60px;
+      color: #000 ! important;
+      font-weight: bold ! important;
+      text-align: left ! important;
+      text-decoration: none ! important;
+  }
+  .accordion-body{
+      background-color: #e8eeff;
+  }
+  .faq img{
+      width: 430px;
+      margin-top: 15px;
+  }
+
+/* new */
+.z1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    margin: 30px 0px;
+    padding: 15px;
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+.header .product{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  .cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+  }
+
+  .cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+  }
+  .container7{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  #root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+  .head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+  }
+  h2{
+    font-size: 20px;
+    color: red;  
+  }
+  button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+  }
+  button:hover{
+    background-color: #333;
+  }
+  .car-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+  }
+  .row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+  }
+  .bx-trash:hover{
+    cursor: pointer;
+    color: #333;
+  }
